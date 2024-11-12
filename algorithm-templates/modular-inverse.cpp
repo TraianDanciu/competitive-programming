@@ -12,7 +12,7 @@ long long lgput(long long a, long long n, long long mod) {
 
 // Using Fermat's little theorem. Works only when modulo is prime
 long long modularInverse(long long value, long long modulo) {
-  return lgput(value, modulo - 2);
+  return lgput(value, modulo - 2, modulo);
 }
 
 long long extendedGcd(long long a, long long b, long long &x, long long &y) {
