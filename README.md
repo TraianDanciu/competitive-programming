@@ -13,4 +13,4 @@ The snippets of template codes of algorithms will not be full codes. They will o
 
 # Credits
 
-Credits to Ștefan Dăscălescu - [stefdasca](https://github.com/stefdasca/) for giving me the idea of making this repo (which will be similar to [his](https://github.com/stefdasca/CompetitiveProgramming))
+Credits to Ștefan Dăscălescu - [stefdasca](https://stefdasca.ro) for giving me the idea of making this repo (which will be similar to [his](https://github.com/stefdasca/CompetitiveProgramming))
