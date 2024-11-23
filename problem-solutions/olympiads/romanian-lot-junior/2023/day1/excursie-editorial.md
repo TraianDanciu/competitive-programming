@@ -1,0 +1,3 @@
+Observăm că indicatoarele trebuie să fie de forma RRR...RLLL..L. Să fixam poziția $i$ până la care vom avea R-uri. Costul va fi egal cu numărul de L-uri de la $st$ la $i$ adunat cu numărul de R-uri de la $i + 1$ la $dr$. Aceste lucruri pot fi calculate ușor folosind sume parțiale.
+
+Fie $prefL_i$ numărul de L-uri de la $1$ la $i$ și $suffR_i$ numărul de R-uri de la $i$ la $n$. Atunci răspunsul va fi $min(prefL_i - prefL_{st-1} + suffR_{i+1} - suffR_{dr+1})$ astfel încât $st - 1 \leq i \leq dr$. Acest lucru este echivalent cu a afla minimul expresiei $prefL_i + suffR_{i+1}$ cu $i$ in intervalul $[st - 1, dr]$. Vom folosi RMQ sau arbori de intervale (Segment Tree) pentru a afla acest minim.
