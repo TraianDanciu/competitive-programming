@@ -1,7 +1,8 @@
 // QSIZE is the maximum length of the deque at all times
+// It is recommended that QSIZE is an power of two (for better speed)
 struct Deque {
   struct Node {
-    int lin, col;
+    int val;
   } v[QSIZE];
   int prim, ultim;
 
@@ -9,13 +10,13 @@ struct Deque {
     prim = ultim = 0;
   }
 
-  void pushFront(int lin, int col) {
+  void pushFront(Node val) {
     prim = (prim - 1 + QSIZE) % QSIZE;
-    v[prim] = {lin, col};
+    v[prim] = val;
   }
 
-  void pushBack(int lin, int col) {
-    v[ultim] = {lin, col};
+  void pushBack(Node val) {
+    v[ultim] = val;
     ultim = (ultim + 1) % QSIZE;
   }
 
