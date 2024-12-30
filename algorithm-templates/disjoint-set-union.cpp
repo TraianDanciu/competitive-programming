@@ -1,5 +1,5 @@
 struct DSU {
-  int sef[MAXN + 1], card[MAXN + 1];
+  int sef[MAXN], card[MAXN];
 
   void init(int n) {
     int i;
